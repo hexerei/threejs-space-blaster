@@ -1,0 +1,34 @@
+{
+  "name": "threejs-space-blaster",
+  "version": "1.0.0",
+  "description": "Packtpub Threejs tutorial project",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify js/main.js | uglifyjs -mc > app.js",
+    "dev": "watchify js/main.js -v -o app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexerei/threejs-space-blaster.git"
+  },
+  "keywords": [
+    "three.js",
+    "game"
+  ],
+  "author": "Daniel Vorhauer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hexerei/threejs-space-blaster/issues"
+  },
+  "homepage": "https://github.com/hexerei/threejs-space-blaster#readme",
+  "dependencies": {
+    "three": "^0.74.0",
+    "three-world": "^2.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "uglify-js": "^2.6.1",
+    "watchify": "^3.7.0"
+  }
+}
